@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Info</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+    <body>
+
+        <nav class="bg-gray-800 text-white w-full h-16 flex items-center justify-around fixed top-0 left-0">
+            <p class="text-2xl font-bold ml-4">Movie App</p>
+            <form id="inputform" class="max-w-md mx-4 flex-1">   
+                <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                        </svg>
+                    </div>
+                    <input type="search" id="searchbar" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Movies, Series..." required />
+                    <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                </div>
+            </form>    
+        </nav> 
+
+
+        <div  class="mt-[70px] bg-gray-100  flex flex-col items-center justify-center min-h-[600px]">
+
+            <!-- Short Content -->
+            <div id="short" class=" bg-white  rounded-lg shadow-lg overflow-hidden max-w-md w-full">
+                <img id="poster" alt="Movie Poster" class="w-full h-80 object-fit ">
+                <div class="p-6">
+                    <h1 id="title" class="text-3xl font-bold mb-2">Movie Title</h1>
+                    <p class="text-gray-600 mb-4"><strong>Year: </strong><span id="year"></span></p>
+                </div>
+                <div class=" flex flex-col items-center">
+                    <button id="showmore" type="button" class="text-gray-900 bg-white border border-gray-300  hover:bg-gray-100  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600">Show More</button>
+                </div>
+            </div>
+            
+            <!-- Long Content -->
+            <div id="long" class=" max-w-md w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                <img id="movie-poster" class="  w-full h-48 object-fit" alt="Poster">
+                <div class="p-4">
+                    <h2 id="movie-title" class="text-2xl font-bold mb-3">HIT</h2>
+                    <p id="movie-release-date" class="text-gray-700 text-sm mb-2 font-bold">Release Date: <span id="release-date" class="font-normal">28 Feb 2020</span></p>
+                    <p id="movie-rating" class="text-gray-700 text-sm mb-2 font-bold">IMDb Rating: <span id="imdb-rating" class="font-normal">7.6</span> (<span id="imdb-votes" class="font-normal">7,757</span> votes)</p>
+                    <p id="movie-genre" class="text-gray-700 text-sm mb-2 font-bold">Genre: <span id="genre" class="font-normal">Action, Crime, Drama</span></p>
+                    <p id="movie-language" class="text-gray-700 text-sm mb-2 font-bold">Language: <span id="language" class="font-normal">Telugu</span></p>
+                    <p id="movie-runtime" class="text-gray-700 text-sm mb-2 font-bold">Runtime: <span id="runtime" class="font-normal">125 min</span></p>
+                    <p id="movie-director" class="text-gray-700 text-sm mb-2 font-bold">Director: <span id="director" class="font-normal">Sailesh Kolanu</span></p>
+                    <p id="movie-writer" class="text-gray-700 text-sm mb-2 font-bold">Writer: <span id="writer" class="font-normal">Sailesh Kolanu, Surbhi Sehgal</span></p>
+                    <p id="movie-actors" class="text-gray-700 text-sm mb-2 font-bold">Actors: <span id="actors" class="font-normal">Vishwak Sen, Ruhani Sharma, Murli Sharma</span></p>
+                    <p id="movie-plot" class="text-gray-700 text-sm mb-2 font-bold">Plot: <span id="plot" class="font-normal">An officer of the 'Homicide Intervention Team' who frequently suffers from having his panic attacks does everything in his power to rescue a woman who went missing.</span></p>
+                    <p id="movie-country" class="text-gray-700 text-sm mb-1 font-bold">Country: <span id="country" class="font-normal">India</span></p>
+                    <a href="https://www.imdb.com/title/tt11490170/" class="text-blue-500 hover:underline mt-4 block" target="_blank">More on IMDb</a>
+                </div>
+                <div class=" flex flex-col items-center">
+                    <button id="showless" type="button" class="text-gray-900 bg-white border border-gray-300  hover:bg-gray-100  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600">Show Less</button>
+                </div>
+            </div>
+            
+            <!-- Error Message -->
+            <p id="errmsg" class="text-red-600 text-[15px] mt-[15px]"></p>
+
+        </div>
+
+
+    </body>
+    <script src="./script.js"></script>
+</html>
