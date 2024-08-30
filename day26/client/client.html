@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+    <form id="connect-form" class="flex flex-col items-center mb-5 border-[2px] p-5 bg-slate-500 rounded-[10px]">
+        <div class="grid gap-6 mb-6 md:grid-cols-2">
+            <div>
+                <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">username</label>
+                <input type="text" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required />
+            </div>
+            <div>
+                <label for="displayName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Display name</label>
+                <input type="text" id="displayName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+            </div>
+        </div>
+        <button id="connect" type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Connect</button>
+    </form>
+    
+    <div class="w-full max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="p-4 border-b border-gray-200 flex justify-between">
+            <h1 class="text-xl font-semibold">Chat Room</h1>
+            <p id="state" class="text-[14px] bg-red-600 px-4 py-2 text-white font-semibold rounded-[10px]">Disconnected</p>
+        </div>
+        <div id="messages" class="p-4 h-64 overflow-y-scroll bg-gray-50">
+            
+        </div>
+        <div class="p-4 border-t border-gray-200 flex justify-between items-center">
+            <input id="messageInput" type="text" placeholder="Type a message..." class="w-full p-2 border border-gray-300 rounded-lg mr-2">
+            <button id="sendButton" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg mb-2 hover:bg-blue-600">Send</button>
+        </div>
+    </div>
+    <div class="mt-4">
+        <button id="disconnect"class=" hidden text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700">Disconnect</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
