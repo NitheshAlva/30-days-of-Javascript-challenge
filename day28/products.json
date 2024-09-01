@@ -1,0 +1,104 @@
+[
+    {
+        "name": "Handcrafted Trees Mug",
+        "description": "A beautifully crafted mug featuring a tree design. Perfect for nature lovers.",
+        "price": 10.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2016/03/27/19/39/hands-1283917_640.jpg"
+    },
+    {
+        "name": "Rustic Beach Mug",
+        "description": "Enjoy your coffee with a view of the rustic beach. Ideal for beach enthusiasts.",
+        "price": 19.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2019/10/21/16/48/table-4566563_640.jpg"
+    },
+    {
+        "name": "Handcrafted Bear Mug",
+        "description": "A mug designed with a bear theme, perfect for animal lovers.",
+        "price": 17.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2023/10/26/13/19/coffee-8342636_640.jpg"
+    },
+    {
+        "name": "Refined Road Mug",
+        "description": "A sophisticated mug with a road design, great for travelers.",
+        "price": 15.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2020/04/25/08/44/mug-5089934_640.jpg"
+    },
+    {
+        "name": "Unbranded Ocean Mug",
+        "description": "A mug featuring an ocean view, ideal for beach lovers.",
+        "price": 10.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2020/04/19/11/52/drink-5063295_640.jpg"
+    },
+    {
+        "name": "Rustic Ocean Mug",
+        "description": "A rustic mug with an ocean theme, perfect for a relaxed vibe.",
+        "price": 9.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2016/01/02/04/59/coffee-1117933_640.jpg"
+    },
+    {
+        "name": "Sleek Old Mug",
+        "description": "A sleek mug with an old-fashioned design, ideal for traditionalists.",
+        "price": 19.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2017/10/13/15/29/coffee-2847957_640.jpg"
+    },
+    {
+        "name": "Sleek Coffee Mug",
+        "description": "A sleek and modern coffee mug, perfect for daily use.",
+        "price": 14.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2015/05/07/13/46/cappuccino-756490_640.jpg"
+    },
+    {
+        "name": "Rustic Trees Mug",
+        "description": "A mug with a rustic tree design, great for nature lovers.",
+        "price": 16.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2016/11/29/12/46/coffee-1869599_640.jpg"
+    },
+    {
+        "name": "Sleek Ocean Mug",
+        "description": "A sleek mug with an ocean view, perfect for a stylish touch.",
+        "price": 18.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2017/05/15/17/43/cup-2315563_1280.jpg"
+    },
+    {
+        "name": "Ergonomic Person Mug",
+        "description": "An ergonomic mug designed with a person theme, great for comfort.",
+        "price": 16.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2016/10/03/12/18/coffee-1711431_640.jpg"
+    },
+    {
+        "name": "Gorgeous Water Mug",
+        "description": "A mug featuring a beautiful water design, perfect for a refreshing feel.",
+        "price": 9.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2020/04/19/11/52/drink-5063295_640.jpg"
+    },
+    {
+        "name": "Generic Fog Mug",
+        "description": "A mug with a foggy design, ideal for a mysterious touch.",
+        "price": 14.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2016/01/02/04/59/coffee-1117933_640.jpg"
+    },
+    {
+        "name": "Gorgeous Building Mug",
+        "description": "A mug featuring a stunning building design, great for architecture enthusiasts.",
+        "price": 11.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2019/10/21/16/48/table-4566563_640.jpg"
+    },
+    {
+        "name": "Intelligent Sunset Mug",
+        "description": "A mug with a beautiful sunset design, ideal for evening relaxation.",
+        "price": 10.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2023/10/26/13/19/coffee-8342636_640.jpg"
+    },
+    {
+        "name": "Unbranded Coffee Mug",
+        "description": "A simple, unbranded coffee mug, perfect for everyday use.",
+        "price": 11.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2020/04/25/08/44/mug-5089934_640.jpg"
+    },
+    {
+        "name": "Rustic Road Mug",
+        "description": "A rustic mug featuring a road design, great for travel enthusiasts.",
+        "price": 9.99,
+        "imageUrl": "https://cdn.pixabay.com/photo/2023/10/26/13/19/coffee-8342636_640.jpg"
+    }
+]

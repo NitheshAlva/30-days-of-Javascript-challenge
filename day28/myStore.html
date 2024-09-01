@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white py-4 px-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">My Store</div>
+            <nav>
+                <a href="./myStore.html" class="px-4 py-2 hover:bg-blue-700 rounded">Home</a>
+                <a href="./products.html" class="px-4 py-2 hover:bg-blue-700 rounded">Products</a>
+                <a href="./contact.html" class="px-4 py-2 hover:bg-blue-700 rounded">Contact</a>
+            </nav>
+            <div class="relative">
+                <a href="./cart.html" class="bg-blue-700 p-2 rounded-full text-white hover:bg-blue-800">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-labelledby="cart-title">
+                        <title id="cart-title">Cart</title>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l1 9h11l1-9h2M3 3l1 9M21 12l-1 9H6l-1-9M21 12H7"></path>
+                    </svg>
+                </a>
+                <span class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold rounded-full px-2 py-1" id="cart-count">0</span>
+            </div>           
+        </div>
+    </header>
+
+    <!-- Product Container Section -->
+    <main class="container mx-auto py-8 px-4">
+        <div id="product-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
