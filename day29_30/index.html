@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Login/Signup form -->
+    <div class="min-h-screen flex items-center justify-center" id="login-container">
+        <div class="bg-white p-8 rounded-lg shadow-md w-96">
+            <h2 id="formhead" class="text-2xl font-bold mb-6 text-center">Login</h2>
+            <form id="login-form" class="space-y-4">
+                <div>
+                    <label for="username" class="block text-gray-700">Username</label>
+                    <input type="text" id="username" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your username">
+                </div>
+                <div>
+                    <label for="password" class="block text-gray-700">Password</label>
+                    <input type="password" id="password" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your password">
+                </div>
+                <button id="formbt" type="submit" class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">Login</button>
+                <p id="signup" class="text-blue-600 text-center">Create a new account</p>
+            </form>
+            <p id="error-message" class="mt-4 text-red-500 text-center hidden">Username does not exist or incorrect password.</p>
+        </div>
+    </div>
+
+    <!-- Dashboard for posts -->
+    <div id="dashboard" class="max-w-4xl mx-auto p-8 hidden">
+
+        <header class="fixed top-0 left-0 right-0 bg-white shadow-md py-4 px-8 flex justify-between items-center z-10">
+            <h1 class="text-3xl font-bold">Social Media App</h1>
+            <button onclick="location.reload()" class="bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600">Logout</button>
+        </header>
+
+        <div class="pt-24">
+            <h2 class="text-3xl font-bold mb-6 text-center">Create a Post</h2>
+            <form id="post-form" class="bg-white p-6 rounded-lg shadow-md space-y-4">
+                <div>
+                    <label for="post-content" class="block text-gray-700">What's on your mind?</label>
+                    <textarea id="post-content" class="w-full h-24 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Write something..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-green-500 text-white py-2 rounded-md hover:bg-green-600">Post</button>
+            </form>
+
+            <!-- Post Container -->
+            <div id="posts-container" class="mt-8 space-y-4">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
